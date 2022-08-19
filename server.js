@@ -1,6 +1,7 @@
 //Modules
 const express = require('express');
 const app = express();
+const path = require('path')
 const cors = require('cors')
 const mvpList = require('./mvpList.js')
 PORT = 3000;
@@ -11,7 +12,7 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 
 //Routes
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(path.resolve(__dirname, 'index.html'))
 })
 
 app.get('/api', (req, res) => {

@@ -26,49 +26,30 @@ body {
 }
 
 .json-sample {
-    background: rgb(35, 34, 34, .30);
+    background: red;
     padding: .5em 1em;
     color: white;
     margin: 1em auto;
 }
 
-.api-call {
-    background: rgb(35, 34, 34, .30);
-    color: white;
-    padding: .5em 1em;
-}
-
 /*=================
 TYPOGRAPHY
 ==================*/
-body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
-}
-
 h1 {
     text-transform: uppercase;
     font-size: 2.5rem;
     text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 3px;
 }
 
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-}
-
 h3 {
     text-transform: uppercase;
+    font-family: 'IBM Plex Sans';
     font-size: 1.5em;
-    text-align: center;
-}
-
-.json-sample p {
-    font-family: 'Cutive Mono', monospace;
     font-weight: 400;
+    text-align: center;
 }

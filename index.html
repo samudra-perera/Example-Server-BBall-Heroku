@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="/public/css/style.css" type="text/css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400&family=Open+Sans&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>NBA MVP API</title>
 </head>
 <body>
-    <h1>The Modern NBA MVP API</h1>
-    <p>The NBA MVP API is a collection of MVP winners post the year 2000</p>
-    <h3>API Documentation</h3>
-    <p>Requests can be made with curl or other helper libraries by following regular REST calls. For example, here is how to GET the data for the year 2021:</p>
-    <p>insert Heroku Link to use the API</p>
-    <p>Calling this resource will respondf with the following object:</p>
-    <div class="json-sample">
+    <div class="container">
+        <h1>The Modern NBA MVP API</h1>
+        <p>The NBA MVP API is a collection of MVP winners post the year 2000</p>
+        <h3>API Documentation</h3>
+        <p>Requests can be made with curl or other helper libraries by following regular REST calls. For example, here is how to GET the data for the year 2021:</p>
+        <p>https://basketball-api-100devs.herokuapp.com/api/2021</p>
+        <p>Calling this resource will respondf with the following object:</p>
+        <div class="json-sample">
+            <p>
+                {<br>
+                    'name': 'Nikola Jokic',<br>
+                    'age': 26,<br>
+                    'ppg': 27.1,<br>
+                    'rpg': 13.8,<br>
+                    'apg': 7.9,<br>
+                    'status': 'Active'<br>
+                }
+            </p>
+        </div>
+        <h2>Base URL</h2>
         <p>
-            {<br>
-                'name': 'Nikola Jokic',<br>
-                'age': 26,<br>
-                'ppg': 27.1,<br>
-                'rpg': 13.8,<br>
-                'apg': 7.9,<br>
-                'status': 'Active'<br>
-            }
+            Users must prepend all resource calls with the base URL: <br>
+            <br>
+            https://basketball-api-100devs.herokuapp.com/api/{year}
         </p>
     </div>
-    <h2>Base URL</h2>
-    <p>
-        Users must prepend all resource calls with the base URL: <br>
-        <br>
-        Heroku API URL
-    </p>
 </body>
 </html>

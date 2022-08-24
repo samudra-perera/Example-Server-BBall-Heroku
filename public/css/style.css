@@ -1,0 +1,45 @@
+/*=================
+LAYOUT
+==================*/
+*::before,
+*,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: clamp(50ch, 50%, 75ch);
+    background: rgba(222, 217, 217, 0.95);
+    padding: 1.5rem 3rem;
+    border-radius: 5%;
+}
+
+
+/*=================
+MODULES
+==================*/
+body {
+    background: url("/img/909424.jpg");
+    background-repeat: repeat-x;
+}
+
+/*=================
+TYPOGRAPHY
+==================*/
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans';
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+}

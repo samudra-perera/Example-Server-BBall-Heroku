@@ -1,7 +1,7 @@
 # THE NBA MVP API
 A simple NBA MVP API that will return the base stats from any NBA MVP winner post 2000. 
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://basketball-api-100devs.herokuapp.com/
 
 ![alt tag](http://placecorgi.com/1200/650)
 
